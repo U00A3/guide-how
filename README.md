@@ -1,0 +1,28 @@
+# Guide: staking RBNT via Routescan
+
+[![Redbelly Mainnet](https://img.shields.io/badge/Redbelly-Mainnet%20%C2%B7%20151-c41e3a?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgNTUwIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNDYyLjI1LDE0NS41NiwyNTYuMDcsMjYuNjNhMTIuMTMsMTIuMTMsMCwwLDAtMTIuMTQsMEwzNy43NSwxNDUuNTZhMTIuMTUsMTIuMTUsMCwwLDAtNi4wNywxMC41MVYzOTMuOTRhMTIuMTYsMTIuMTYsMCwwLDAsNi4wNywxMC41MUwyNDMuOTMsNTIzLjM4YTEyLjE4LDEyLjE4LDAsMCwwLDEyLjE0LDBMNDYyLjI1LDQwNC40NWExMi4xNiwxMi4xNiwwLDAsMCw2LjA3LTEwLjUxVjE1Ni4wN0ExMi4xNSwxMi4xNSwwLDAsMCw0NjIuMjUsMTQ1LjU2Wk0yNTAsNTEuMTVsMTkwLjYzLDExMGMtMzEuMDUsMTcuNTItNTcuMjUsMzkuNzctNzkuMzUsNjQuNTctNDMuMTItNTAuODQtMTAzLTEwMS0xODQuMzgtMTMyLjM3Wk00MDQuMzUsMzA4LjkxYTEzLjcsMTMuNywwLDAsMS0xMi41NS04LjIxLDEzLjU4LDEzLjU4LDAsMSwxLDI1LjA5LDBBMTMuNjksMTMuNjksMCwwLDEsNDA0LjM1LDMwOC45MVptMC00MC43M2EyNy4yMywyNy4yMywwLDAsMC05LjU0LDEuOGMtNy43Ny0xMS40Ny0xNi4xOC0yMy4xNC0yNS43LTM0LjkyYTMwMi4zNiwzMDIuMzYsMCwwLDEsNzAuNDctNTkuMjksNjYxLjI5LDY2MS4yOSwwLDAsMC0zNC4yNyw5Mi41MUM0MDUsMjY4LjI3LDQwNC42OCwyNjguMTgsNDA0LjM1LDI2OC4xOFpNMzUzLjI4LDIzNWMtMjEuOSwyNi4zNi0zOS40Nyw1NS4xOS01My41Niw4NC02LjgxLTk4LjczLTgyLjctMTc2LjA2LTEyMy40My0yMTNDMjU0LjM3LDEzNi45NCwzMTEuODQsMTg1LjczLDM1My4yOCwyMzVabS02MiwxMjdhMTMuNywxMy43LDAsMCwxLTEyLjU1LTguMjEsMTMuNDQsMTMuNDQsMCwwLDEtMS01LjEyLDEzLjYyLDEzLjYyLDAsMSwxLDEzLjU3LDEzLjMzWm0tMy43NC00MC4zNWEyNy40NywyNy40NywwLDAsMC02LjgxLDEuNzQsNDgwLjk0LDQ4MC45NCwwLDAsMC0xMDEuNzQtMTAyLjQsMjcsMjcsMCwwLDAsMy43Ni0xMy42MiwyNy4zOCwyNy4zOCwwLDAsMC0yMS4zOS0yNi42OFYxMDguOUMxOTguNzcsMTQyLjA2LDI4MS4zOSwyMjAuOTIsMjg3LjQ5LDMyMS41N1pNMTY3LjgzLDIxMi40MWExMy43LDEzLjcsMCwwLDEtMjUuMSwwLDEzLjM5LDEzLjM5LDAsMCwxLTEtNS4xMSwxMy41NywxMy41NywwLDAsMSwyNy4xNCwwQTEzLjM5LDEzLjM5LDAsMCwxLDE2Ny44MywyMTIuNDFabS0xOC42Ny0xMDMuMXY3MS4zM2EyNy4zMiwyNy4zMiwwLDAsMC0xNiwxMC41NEE0NDMuMjcsNDQzLjI3LDAsMCwwLDYzLDE1OVpNNTYsMTgwLjUzYzE4LjEyLDI2Ljg0LDUzLjczLDg0LjEzLDc1LjMxLDE0OC4yNS0uMjQuMTUtLjUxLjI3LS43NC40M0E0NTIuNiw0NTIuNiwwLDAsMCw1NiwyNzYuNjlaTTE1OS41NiwzNTEuNzhhMTMuNDQsMTMuNDQsMCwwLDEtMSw1LjEyLDEzLjUyLDEzLjUyLDAsMSwxLDEtNS4xMlptLTExLDg4LjU0TDU2LDM4Ni45M1YyOTAuNjdhNDM1LjEzLDQzNS4xMywwLDAsMSw2Ni4yNCw0Ny43MUEyNy4wOSwyNy4wOSwwLDAsMCwxNDQuMzIsMzc5QzE0OC4xNiwzOTkuNjIsMTUwLDQyMC4yOSwxNDguNTMsNDQwLjMyWk0xNjAuMTYsNDQ3YzIuNC0yMi45Mi43MS00Ni41Ni0zLjU1LTcwYTI3LDI3LDAsMCwwLDMuNzEtMiw1MTkuNTIsNTE5LjUyLDAsMCwxLDgyLDExOS40MVptODguNzcsMzMuNTdhNTMwLjg4LDUzMC44OCwwLDAsMC04MC0xMTMuODlBMjcuMzUsMjcuMzUsMCwwLDAsMTQ2LDMyNC4zOGEyNy44OCwyNy44OCwwLDAsMC0zLjA1LjMxQzEyMC43MywyNTguMzQsODQsMTk5Ljg3LDY1LjU0LDE3Mi44NGE0MzIuMSw0MzIuMSwwLDAsMSw2Mi44MiwyOS40OSwyNy44OSwyNy44OSwwLDAsMC0uNSw1LDI3LjQsMjcuNCwwLDAsMCw0Mi45MSwyMi41OUE0NjcuOSw0NjcuOSwwLDAsMSwyNzAuODgsMzMwLjM5YTI3LjA4LDI3LjA4LDAsMCwwLDYuNjEsNDEuNzhBNjQwLjE2LDY0MC4xNiwwLDAsMCwyNDguOTMsNDgwLjZabTEwLjIxLDEzYTYyNC42Nyw2MjQuNjcsMCwwLDEsMjkuNzktMTE3LjgzYy43Ny4wNywxLjUxLjIzLDIuMy4yM2EyNy4wNywyNy4wNywwLDAsMCw4LjcxLTEuNTRBNTIzLjcxLDUyMy43MSwwLDAsMSwzMzYuNDEsNDQ5YW04Ny45MS01MC43MWE1MzcuMiw1MzcuMiwwLDAsMC0zNi43NS03NC42NUEyNy4xNCwyNy4xNCwwLDAsMCwzMDksMzI3Ljg1YzEzLjY4LTI4LjU5LDMwLjY4LTU3LjIzLDUyLjE2LTgzLjQsOC42NiwxMC44MiwxNi40LDIxLjU0LDIzLjU3LDMyLjA5YTI3LjIzLDI3LjIzLDAsMCwwLDcuOSw0My42OSw1MzkuNjUsNTM5LjY1LDAsMCwwLTEwLjg0LDEwMi42M1pNMzk0LDQxNS43OUE1MzAuMzQsNTMwLjM0LDAsMCwxLDQwNC40OSwzMjNhMjcuMDgsMjcuMDgsMCwwLDAsNy43OC0xLjI4LDUwMy4xNSw1MDMuMTUsMCwwLDEsMzAuMzMsNjYuMDhabTUwLTU3Yy01LjM4LTEyLjM4LTExLjUxLTI3LjExLTIxLjI0LTQzLjFBMjcuMTQsMjcuMTQsMCwwLDAsNDE3LDI3MS4zOSw2NTMuMzIsNjUzLjMyLDAsMCwxLDQ0NCwxOTUuNTVaIiAvPjwvc3ZnPg%3D%3D&logoWidth=36&style=plastic)](https://redbelly.network/)
+[![Routescan](https://img.shields.io/badge/Explorer-Routescan-c41e3a?style=plastic)](https://redbelly.routescan.io)
+[![PDF guide](https://img.shields.io/badge/Guide-PDF-c41e3a?style=plastic)](./GUIDE.pdf)
+[![Token](https://img.shields.io/badge/Token-native%20RBNT-555?style=plastic)](#guide-staking-rbnt-via-routescan)
+[![Verify first](https://img.shields.io/badge/Security-verify%20addresses-yellow?style=plastic)](#1-security---read-this-first)
+
+How to stake / unstake / claim RBNT rewards on [Redbelly Routescan](https://redbelly.routescan.io) **without the Reddex frontend** (Read Contract / Write Contract).
+
+**Network:** Redbelly (`Chain ID: 151`) · native RBNT
+
+## File
+
+- **[GUIDE.pdf](./GUIDE.pdf)**  -  full guide with screenshots
+
+## 1. Security - read this first
+
+1. **Verify every contract address yourself** before you sign anything. This guide / PDF / screenshots can be swapped  -  do not trust them as the only source. Compare the address with official Reddex (or another source you trust), character by character, and on Routescan check `lockPeriod` (`0` = liquid, `31536000` = lock 365).
+2. Run **Simulate** before every **Write**. Write without a successful simulation = unnecessary risk.
+3. **Write** = a real transaction  -  only then do funds / gas move.
+4. Lock 365 is a deliberate choice  -  Routescan does not warn you the way the Reddex frontend does.
+5. Do not send RBNT to the contract address with a normal transfer  -  only the **`stake`** function.
+6. After each action, check state in **Read**, not only “success” in the wallet.
+
+## 2. Disclaimer
+
+This guide is provided for informational purposes only and is **not financial advice**. You use it at your own risk. Smart contracts can change, so always verify the current state yourself.

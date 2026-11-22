@@ -1,0 +1,5 @@
+# Publish only the PDF + README to GitHub
+*
+!GUIDE.pdf
+!README.md
+!.gitignore
